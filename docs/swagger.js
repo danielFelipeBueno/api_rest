@@ -63,6 +63,36 @@ const swaggerDefinition = {
                         type:"boolean"
                     }
                 }
+            },
+            adsvertisements:{
+                type:"object",
+                required:["name", "description", "brand","category"],
+                properties:{
+                    name: {
+                        type: "string",
+                    },
+                    description: {
+                        type: "string"
+                    },
+                    discount: {
+                        type: "number"
+                    },
+                    brand: {
+                        type: "string"
+                    },
+                    category: {
+                        type: "string"
+                    },
+                    image: {
+                        type: "string"
+                    },
+                    status: {
+                        type: "boolean"
+                    },
+                    user_id: {
+                        type: "string"
+                    }
+                }
             }
         }
     },
