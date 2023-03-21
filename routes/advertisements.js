@@ -5,7 +5,7 @@ const {validatorCreateAd, validatorGetAd, validatorPostAd} = require("../validat
 
 /**
  * @swagger
- * /api/advertisements/create:
+ * /advertisements/create:
  *   post:
  *     summary: Crea un nuevo producto.
  *     description: Crea un nuevo producto con la información proporcionada en el cuerpo de la solicitud.
@@ -35,7 +35,7 @@ router.post('/create', validatorCreateAd, createAds);
 
 /**
  * @openapi
- * /api/advertisements/all_ads:
+ * /advertisements/all_ads:
  *   get:
  *     summary: Obtiene todos los productos
  *     description: Endpoint para obtener una lista de todos los productos registrados en el sistema.
@@ -52,7 +52,7 @@ router.get("/all_ads", getAds);
 
 /**
  * @openapi
- * /api/advertisements/id/{user_id}:
+ * /advertisements/id/{user_id}:
  *   get:
  *     summary: Obtener los productos de un usuario por id
  *     parameters:

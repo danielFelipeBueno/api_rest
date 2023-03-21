@@ -8,14 +8,14 @@ const swaggerDefinition = {
     },
     servers: [
         {
-            url:"http://localhost:8080"
+            url:"https://apimyshop.fly.dev/api"
         }
     ],
     components:{
         schemas:{
             users:{
                 type:"object",
-                required:["first_name", "last_name","email","password"],
+                required:["first_name", "last_name","email"],
                 properties:{
                     first_name:{
                         type:"string"
@@ -61,6 +61,9 @@ const swaggerDefinition = {
                     },
                     status:{
                         type:"boolean"
+                    },
+                    user_id:{
+                        type:"string"
                     }
                 }
             },

@@ -5,7 +5,7 @@ const {validatorGetProduct, validatorCreateProduct, validatorProduct, validatorS
 
 /**
  * @swagger
- * /api/products/create:
+ * /products/create:
  *   post:
  *     summary: Crea un nuevo producto.
  *     description: Crea un nuevo producto con la información proporcionada en el cuerpo de la solicitud.
@@ -35,7 +35,7 @@ router.post('/create', createProduct);
 
 /**
  * @openapi
- * /api/products/all_products:
+ * /products/all_products:
  *   get:
  *     summary: Obtiene todos los productos
  *     description: Endpoint para obtener una lista de todos los productos registrados en el sistema.
@@ -53,7 +53,7 @@ router.get("/all_products", getProducts);
 
 /**
  * @openapi
- * /api/products/id/{user_id}:
+ * /products/id/{user_id}:
  *   get:
  *     summary: Obtener los productos de un usuario por id
  *     parameters:
@@ -79,7 +79,7 @@ router.get("/id/:user_id", validatorGetProduct, getProduct);
 
 /**
  * @openapi
- * /api/products/search_products/{name}:
+ * /products/search_products/{name}:
  *   get:
  *     tags:
  *       - Home
@@ -134,7 +134,7 @@ router.put("/update/:id", validatorProduct, validatorCreateProduct, updateProduc
 
 /**
  * @openapi
- * /api/products/home:
+ * /products/home:
  *   get:
  *     tags:
  *       - Home

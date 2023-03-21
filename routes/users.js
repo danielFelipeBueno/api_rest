@@ -7,7 +7,7 @@ const {validatorGetUser, validatorCreateUser, validatorLoginUser} = require("../
 
 /**
  * @openapi
- * /api/users/id/{id}:
+ * /users/id/{id}:
  *   get:
  *     summary: Obtener un usuario por su ID
  *     parameters:
@@ -37,7 +37,7 @@ router.get("/id/:id",validatorGetUser, getItem);
 
 /**
  * @openapi
- * /api/users/all_users:
+ * /users/all_users:
  *   get:
  *     summary: Obtiene todos los usuarios
  *     description: Endpoint para obtener una lista de todos los usuarios registrados en el sistema.
@@ -54,7 +54,7 @@ router.get("/all_users", getItems )
 
 /**
  * @swagger
- * /api/users/create:
+ * /users/create:
  *   post:
  *     summary: Crea un nuevo usuario.
  *     description: Crea un nuevo usuario con la información proporcionada en el cuerpo de la solicitud.
@@ -85,7 +85,7 @@ router.post("/create", createItem )
 
 /**
  * @swagger
- * /api/users/update/{id}:
+ * /users/update/{id}:
  *   put:
  *     summary: Actualizar un usuario existente
  *     parameters:
